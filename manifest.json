@@ -1,5 +1,6 @@
 {
   "author": "BPower0036",
+  "homepage": "https://github.com/BPower0036/uMatrix/"
   "background": {
     "page": "background.html"
   },
