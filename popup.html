@@ -21,6 +21,7 @@
          --><span class="scope tip-anchor-center" id="globalScope" data-scope="*" data-i18n-tip="matrixGlobalScopeTip"><span><span>&#x2217;</span></span></span>
             <span id="mtxSwitch_matrix-off" class="fa-icon fa-icon-badged scopeRel tip-anchor-center" data-i18n-tip="matrixMtxButtonTip">power-off</span>
             <span id="buttonMtxSwitches" class="fa-icon fa-icon-badged scopeRel" tabindex="-1" data-dropdown-menu="dropDownMenuSwitches">ellipsis-v</span>
+            <span id="buttonRecipes" class="fa-icon fa-icon-badged scopeRel" data-dropdown-menu="dropDownMenuRecipes">puzzle-piece</span>
             <span id="buttonPersist" class="fa-icon fa-icon-badged scopeRel tip-anchor-center" data-i18n-tip="matrixPersistButtonTip">lock</span>
             <span id="buttonRevertScope" class="fa-icon fa-icon-badged scopeRel tip-anchor-center" data-i18n-tip="matrixRevertButtonTip">reply</span>
             </div>
@@ -76,6 +77,12 @@
     </div>
 </div>
 
+<div id="dropDownMenuRecipes" class="dropdown-menu-capture dropdown-menu-centered">
+    <div class="dropdown-menu">
+        <ul></ul>
+    </div>
+</div>
+
 <div id="noTabFound"></div>
 
 <!-- Convenient to auto-fetch locale strings used in scripts -->
@@ -107,6 +114,7 @@
         </symbol>
     </svg>
     -->
+    <li class="recipe"><div><span class="expander"></span><span class="name"></span><span class="fa-icon committer" title="matrixRecipeSaveTip">lock</span><span class="fa-icon importer" title="matrixRecipeImportTip">download</span></div><div class="ruleset"></div></li>
 </div>
 
 <script src="js/fa-icons.js"></script>

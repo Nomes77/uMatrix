@@ -259,6 +259,74 @@ button.disabled > span.badge {
     left: 10vw;
     width: 80vw;
     }
+#dropDownMenuRecipes > .dropdown-menu > ul {
+    max-height: 70vh;
+    min-width: 50vw;
+    overflow: auto;
+    }
+#dropDownMenuRecipes li > ul {
+    margin-left: 1em;
+    padding: 0;
+    }
+.recipe {
+    list-style-type: none;
+    white-space: nowrap;
+    }
+.recipe > div {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    }
+.recipe > div > span {
+    color: #888;
+    fill: #888;
+    }
+.recipe > div > span:hover {
+    color: #000;
+    fill: #000;
+    }
+.recipe .expander {
+    display: inline-block;
+    padding: 0.4em;
+    width: 0.8em;
+    }
+.recipe .expander::before {
+    content: '+';
+    font-family: sans-serif;
+    }
+.recipe.expanded .expander::before {
+    content: '\2212';
+    }
+.recipe .name {
+    color: #000;
+    cursor: default;
+    flex-grow: 1;
+    padding: 0.4em 0;
+    }
+.recipe .importer,
+.recipe .committer {
+    cursor: pointer;
+    display: none;
+    font-size: 100%;
+    padding-right: 0.5em;
+    text-align: center;
+    }
+.recipe.mustImport .importer,
+.recipe.mustCommit:not(.mustImport) .committer {
+    display: inline-block;
+    }
+.recipe:hover {
+    background-color: #eef;
+    }
+.recipe .ruleset {
+    display: none;
+    font: smaller monospace;
+    padding: 0 0.5em 0.5em 2em;
+    white-space: pre;
+    }
+.recipe.expanded .ruleset {
+    display: block;
+    }
 
 body .toolbar .scopeRel {
     color: #24c;

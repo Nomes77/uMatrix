@@ -68,6 +68,7 @@
 
     await Promise.all([
         µm.loadMatrix(),
+        µm.loadHostsFiles(),
     ]);
     log.info(`All rules ready ${Date.now()-vAPI.T0} ms after launch`);
 
@@ -89,6 +90,8 @@
     log.info(`Tab stores ready ${Date.now()-vAPI.T0} ms after launch`);
 
     µm.webRequest.start();
+
+    µm.loadRecipes();
 
     // https://github.com/uBlockOrigin/uMatrix-issues/issues/63
     //   Ensure user settings are fully loaded before launching the
