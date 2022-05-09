@@ -26,28 +26,17 @@
 {
     const µm = µMatrix;
     µm.pMatrix = new µm.Matrix();
-    µm.pMatrix.setSwitch('matrix-off', 'about-scheme', 1);
-    µm.pMatrix.setSwitch('matrix-off', 'chrome-extension-scheme', 1);
-    µm.pMatrix.setSwitch('matrix-off', 'chrome-scheme', 1);
-    µm.pMatrix.setSwitch('matrix-off', 'moz-extension-scheme', 1);
-    µm.pMatrix.setSwitch('matrix-off', 'opera-scheme', 1);
-    µm.pMatrix.setSwitch('matrix-off', 'vivaldi-scheme', 1);
     // https://discourse.mozilla.org/t/support-umatrix/5131/157
     µm.pMatrix.setSwitch('matrix-off', 'wyciwyg-scheme', 1);
-    µm.pMatrix.setSwitch('matrix-off', 'behind-the-scene', 1);
-    µm.pMatrix.setSwitch('referrer-spoof', 'behind-the-scene', 2);
     µm.pMatrix.setSwitch('https-strict', 'behind-the-scene', 2);
     // Global rules
-    µm.pMatrix.setSwitch('referrer-spoof', '*', 1);
+    µm.pMatrix.setSwitch('referrer-spoof', '*', 2);
     µm.pMatrix.setSwitch('noscript-spoof', '*', 1);
     µm.pMatrix.setSwitch('cname-reveal', '*', 1);
     µm.pMatrix.setCell('*', '*', '*', µm.Matrix.Red);
-    µm.pMatrix.setCell('*', '*', 'css', µm.Matrix.Green);
     µm.pMatrix.setCell('*', '*', 'image', µm.Matrix.Green);
-    µm.pMatrix.setCell('*', '*', 'frame', µm.Matrix.Red);
     // 1st-party rules
     µm.pMatrix.setCell('*', '1st-party', '*', µm.Matrix.Green);
-    µm.pMatrix.setCell('*', '1st-party', 'frame', µm.Matrix.Green);
 
     µm.tMatrix = new µm.Matrix();
     µm.tMatrix.assign(µm.pMatrix);
