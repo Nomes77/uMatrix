@@ -31,10 +31,6 @@
         "message": "Mes règles",
         "description": "a tab in dashboard"
     },
-    "ubiquitousRulesPageName": {
-        "message": "Ressources",
-        "description": "a tab in dashboard"
-    },
     "rawSettingsPageName": {
         "message": "Plus",
         "description": "a tab in dashboard"
@@ -154,14 +150,6 @@
     "matrixNoTabFound": {
         "message": "Aucune page Web trouvée",
         "description": "Displays in place of matrix when no data is found for the current page"
-    },
-    "matrixRecipeImportTip": {
-        "message": "Importer les règles",
-        "description": "Used as a tooltip for the recipe import button"
-    },
-    "matrixRecipeSaveTip": {
-        "message": "Enregistrer les règles",
-        "description": "Used as a tooltip for the recipe padlock button"
     },
     "statsPageTitle": {
         "message": "uMatrix &ndash; Statistiques",
@@ -603,88 +591,12 @@
         "message": "mes-regles-umatrix.txt",
         "description": "default file name to use"
     },
-    "assetsHostsSection": {
-        "message": "Fichiers hosts",
-        "description": "header to identify the hosts files section"
-    },
-    "hostsFilesPrompt": {
-        "message": "Tout nom de domaine énuméré dans un des fichiers choisis ci-dessous est bloqué dans le contexte global (*).",
-        "description": ""
-    },
-    "hostsFilesStats": {
-        "message": "{{blockedHostnameCount}} nom(s) de domaine distinct(s) bloqué(s) depuis :",
-        "description": ""
-    },
-    "hostsFilesPerFileStats": {
-        "message": "{{used}} utilisé(s) sur un total de {{total}}",
-        "description": ""
-    },
-    "hostsFilesLastUpdate": {
-        "message": "Dernière mise à jour effectuée il y a : {{ago}}",
-        "description": "English: Last update: {{ago}}, where 'ago' will be replaced with something like '2 days ago'"
-    },
-    "hostsFilesApplyChanges": {
-        "message": "Appliquer les modifications",
-        "description": ""
-    },
-    "hostsFilesAutoUpdatePrompt": {
-        "message": "Mettre à jour les ressources automatiquement",
-        "description": ""
-    },
-    "hostsFilesUpdateNow": {
-        "message": "Mettre à jour maintenant",
-        "description": ""
-    },
-    "hostsFilesPurgeAll": {
-        "message": "Vider tous les caches",
-        "description": ""
-    },
-    "hostsFilesExternalListsHint": {
-        "message": "Une URL par ligne. Les lignes commençant par &lsquo;#&rsquo; seront ignorées. Une URL invalide sera automatiquement ignorée.",
-        "description": ""
-    },
-    "hostsFilesExternalListsParse": {
-        "message": "Valider",
-        "description": ""
-    },
-    "hostsFilesExternalListPurge": {
-        "message": "Vider le cache",
-        "description": ""
-    },
-    "hostsFilesExternalListNew": {
-        "message": "Nouvelle version disponible",
-        "description": ""
-    },
-    "hostsFilesExternalListObsolete": {
-        "message": "Potentiellement obsolète",
-        "description": ""
-    },
-    "assetsRecipesSection": {
-        "message": "Recettes de règles",
-        "description": "header to identify the ruleset files section"
-    },
-    "assetsRecipesSummary": {
-        "message": "Les recettes de règles sont importés depuis la fenêtre pop-up <em>à la demande</em>, c'est-à-dire <b>uniquement</b> à travers l’interaction utilisateur.",
-        "description": ""
-    },
-    "assetsImportLabel": {
-        "message": "Importer...",
-        "description": ""
-    },
-    "assetsInlineHostsLabel": {
-        "message": "Mes hôtes",
-        "description": ""
-    },
-    "assetsInlineRecipesLabel": {
-        "message": "Mes recettes",
-        "description": ""
-    },
     "rawSettingsWarning": {
         "message": "Attention, modifiez ces paramètres bruts à vos risques et périls.",
         "description": ""
     },
     "aboutChangelog": {
-        "message": "<a href='https://github.com/gorhill/uMatrix/releases'>Journal des changements</a>",
+        "message": "<a href='https://github.com/BPower0036/uMatrix/releases'>Journal des changements</a>",
         "description": ""
     },
     "aboutStorageUsed": {
@@ -700,7 +612,7 @@
         "description": ""
     },
     "aboutCode": {
-        "message": "Code Source (Licence GPLv3)",
+        "message": "Code Source",
         "description": ""
     },
     "aboutIssues": {
@@ -826,22 +738,6 @@
     "showLoggerButton": {
         "message": "Journal des requêtes",
         "description": "Appears in Firefox's add-on preferences"
-    },
-    "cloudPush": {
-        "message": "Exporter vers le stockage dans le nuage",
-        "description": "tooltip"
-    },
-    "cloudPull": {
-        "message": "Importer depuis le stockage dans le nuage",
-        "description": "tooltip"
-    },
-    "cloudNoData": {
-        "message": "...\n...",
-        "description": ""
-    },
-    "cloudDeviceNamePrompt": {
-        "message": "Nom de ce périphérique :",
-        "description": "used as a prompt for the user to provide a custom device name"
     },
     "genericSubmit": {
         "message": "Appliquer",

@@ -1,6 +1,5 @@
 {
   "author": "BPower0036",
-  "homepage": "https://github.com/BPower0036/uMatrix/"
   "background": {
     "page": "background.html"
   },
@@ -15,7 +14,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "@uMatrix",
-      "strict_min_version": "56.0",
+      "strict_min_version": "56.0a1",
       "update_url": "https://raw.githubusercontent.com/BPower0036/uMatrix/main/update.json"
     }
   },
@@ -70,5 +69,5 @@
     "<all_urls>"
   ],
   "short_name": "uMatrix",
-  "version": "1.1.1"
+  "version": "1.2.0"
 }

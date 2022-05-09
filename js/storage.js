@@ -503,6 +503,7 @@ self.addEventListener('rawSettingsChanged', ( ) => {
         this.mergeHostsFileContent(details.content);
     }
 
+    const hostsFileMeta = this.liveHostsFiles.get(details.assetKey);
     if ( hostsFileMeta === undefined ) {
         this.liveHostsFiles.delete(details.assetKey);
         return;

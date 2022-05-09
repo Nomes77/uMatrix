@@ -31,10 +31,6 @@
         "message": "Mijn regels",
         "description": "a tab in dashboard"
     },
-    "ubiquitousRulesPageName": {
-        "message": "Middelen",
-        "description": "a tab in dashboard"
-    },
     "rawSettingsPageName": {
         "message": "Meer",
         "description": "a tab in dashboard"
@@ -154,14 +150,6 @@
     "matrixNoTabFound": {
         "message": "Geen webpagina gevonden",
         "description": "Displays in place of matrix when no data is found for the current page"
-    },
-    "matrixRecipeImportTip": {
-        "message": "Regels importeren",
-        "description": "Used as a tooltip for the recipe import button"
-    },
-    "matrixRecipeSaveTip": {
-        "message": "Regels opslaan",
-        "description": "Used as a tooltip for the recipe padlock button"
     },
     "statsPageTitle": {
         "message": "uMatrix &ndash; Statistieken",
@@ -603,88 +591,12 @@
         "message": "mijn-umatrix-regels.txt",
         "description": "default file name to use"
     },
-    "assetsHostsSection": {
-        "message": "Hosts-bestanden",
-        "description": "header to identify the hosts files section"
-    },
-    "hostsFilesPrompt": {
-        "message": "Alle hostnamen in een hosts-bestand worden in het globale bereik als geblackliste hostnamen geladen.",
-        "description": ""
-    },
-    "hostsFilesStats": {
-        "message": "{{blockedHostnameCount}} afzonderlijke geblokkeerde hostnamen van:",
-        "description": ""
-    },
-    "hostsFilesPerFileStats": {
-        "message": "{{used}} van {{total}} gebruikt",
-        "description": ""
-    },
-    "hostsFilesLastUpdate": {
-        "message": "Laatst bijgewerkt: {{ago}}",
-        "description": "English: Last update: {{ago}}, where 'ago' will be replaced with something like '2 days ago'"
-    },
-    "hostsFilesApplyChanges": {
-        "message": "Wijzigingen toepassen",
-        "description": ""
-    },
-    "hostsFilesAutoUpdatePrompt": {
-        "message": "Middelen automatisch bijwerken",
-        "description": ""
-    },
-    "hostsFilesUpdateNow": {
-        "message": "Nu bijwerken",
-        "description": ""
-    },
-    "hostsFilesPurgeAll": {
-        "message": "Alle caches legen",
-        "description": ""
-    },
-    "hostsFilesExternalListsHint": {
-        "message": "Importeer hier externe middelen: \nEén URL per regel; ongeldige URL’s worden zonder mededeling genegeerd.",
-        "description": ""
-    },
-    "hostsFilesExternalListsParse": {
-        "message": "Toepassen",
-        "description": ""
-    },
-    "hostsFilesExternalListPurge": {
-        "message": "cache legen",
-        "description": ""
-    },
-    "hostsFilesExternalListNew": {
-        "message": "nieuwe versie beschikbaar",
-        "description": ""
-    },
-    "hostsFilesExternalListObsolete": {
-        "message": "verouderd",
-        "description": ""
-    },
-    "assetsRecipesSection": {
-        "message": "Regelsetrecepten",
-        "description": "header to identify the ruleset files section"
-    },
-    "assetsRecipesSummary": {
-        "message": "Regelsetrecepten worden <em>op aanvraag</em> vanuit het pop-uppaneel geïmporteerd, d.w.z. <b>alleen</b> via gebruikersinteractie.",
-        "description": ""
-    },
-    "assetsImportLabel": {
-        "message": "Importeren...",
-        "description": ""
-    },
-    "assetsInlineHostsLabel": {
-        "message": "Mijn hosts",
-        "description": ""
-    },
-    "assetsInlineRecipesLabel": {
-        "message": "Mijn recepten",
-        "description": ""
-    },
     "rawSettingsWarning": {
         "message": "Waarschuwing! U wijzigt deze configuratie-instellingen op eigen risico.",
         "description": ""
     },
     "aboutChangelog": {
-        "message": "<a href='https://github.com/gorhill/uMatrix/releases'>Wijzigingenlogboek</a>",
+        "message": "<a href='https://github.com/BPower0036/uMatrix/releases'>Wijzigingenlogboek</a>",
         "description": ""
     },
     "aboutStorageUsed": {
@@ -700,7 +612,7 @@
         "description": ""
     },
     "aboutCode": {
-        "message": "Broncode (GPLv3)",
+        "message": "Broncode",
         "description": ""
     },
     "aboutIssues": {
@@ -826,22 +738,6 @@
     "showLoggerButton": {
         "message": "Logger",
         "description": "Appears in Firefox's add-on preferences"
-    },
-    "cloudPush": {
-        "message": "Exporteren naar cloudopslag",
-        "description": "tooltip"
-    },
-    "cloudPull": {
-        "message": "Importeren uit cloudopslag",
-        "description": "tooltip"
-    },
-    "cloudNoData": {
-        "message": "...\n...",
-        "description": ""
-    },
-    "cloudDeviceNamePrompt": {
-        "message": "Naam van dit apparaat:",
-        "description": "used as a prompt for the user to provide a custom device name"
     },
     "genericSubmit": {
         "message": "Verzenden",

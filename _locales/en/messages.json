@@ -31,10 +31,6 @@
         "message": "My rules",
         "description": "a tab in dashboard"
     },
-    "ubiquitousRulesPageName" : {
-        "message": "Assets",
-        "description": "a tab in dashboard"
-    },
     "rawSettingsPageName": {
         "message": "More",
         "description": "a tab in dashboard"
@@ -43,8 +39,6 @@
         "message": "About",
         "description": "a tab in dashboard"
     },
-
-
     "allPrettyName": {
         "message": "all",
         "description": "HAS TO FIT IN MATRIX HEADER!"
@@ -85,8 +79,6 @@
         "message": "other",
         "description": "HAS TO FIT IN MATRIX HEADER!"
     },
-
-
     "matrixNoNetTrafficPrompt" : {
         "message": "No net traffic seen for this tab so far.",
         "description": ""
@@ -159,15 +151,6 @@
         "message": "No web page found",
         "description": "Displays in place of matrix when no data is found for the current page"
     },
-    "matrixRecipeImportTip" : {
-        "message": "Import rules",
-        "description": "Used as a tooltip for the recipe import button"
-    },
-    "matrixRecipeSaveTip" : {
-        "message": "Save rules",
-        "description": "Used as a tooltip for the recipe padlock button"
-    },
-
     "statsPageTitle" : {
         "message": "uMatrix &ndash; Statistics",
         "description": ""
@@ -496,7 +479,6 @@
         "message": "Disable tooltips",
         "description": ""
     },
-
     "privacyPageTitle" : {
         "message": "uMatrix &ndash; Privacy",
         "description": ""
@@ -565,8 +547,6 @@
         "message": "<p>Hyperlink auditing is a mechanism which allow a party, <b>any party</b>, to be informed about which link a user clicked on a particular web page. It is essentially a tracking feature: it allows a web site, or any third-party to that web site, to be informed about which link you clicked on which one of its web pages. The sole purpose is to track your browsing activity.</p>",
         "description": ""
     },
-
-
     "userRulesPermanentHeader": {
         "message": "Permanent rules",
         "description": ""
@@ -611,92 +591,12 @@
         "message": "my-umatrix-rules.txt",
         "description": "default file name to use"
     },
-
-
-    "assetsHostsSection" : {
-        "message": "Hosts files",
-        "description": "header to identify the hosts files section"
-    },
-    "hostsFilesPrompt" : {
-        "message": "All hostnames in a hosts file are loaded as blacklisted hostnames in the global scope.",
-        "description": ""
-    },
-    "hostsFilesStats" : {
-        "message": "{{blockedHostnameCount}} distinct blocked hostnames from:",
-        "description": ""
-    },
-    "hostsFilesPerFileStats" : {
-        "message": "{{used}} used out of {{total}}",
-        "description": ""
-    },
-    "hostsFilesLastUpdate" : {
-        "message":"Last update: {{ago}}",
-        "description":"English: Last update: {{ago}}, where 'ago' will be replaced with something like '2 days ago'"
-    },
-    "hostsFilesApplyChanges" : {
-        "message": "Apply changes",
-        "description": ""
-    },
-    "hostsFilesAutoUpdatePrompt":{
-        "message":"Auto-update assets",
-        "description":""
-    },
-    "hostsFilesUpdateNow":{
-        "message":"Update now",
-        "description":""
-    },
-    "hostsFilesPurgeAll":{
-        "message":"Purge all caches",
-        "description":""
-    },
-    "hostsFilesExternalListsHint":{
-        "message":"Import external assets here: \nOne URL per line; invalid URLs will be silently ignored.",
-        "description":""
-    },
-    "hostsFilesExternalListsParse":{
-        "message":"Parse",
-        "description":""
-    },
-    "hostsFilesExternalListPurge":{
-        "message":"purge cache",
-        "description":""
-    },
-    "hostsFilesExternalListNew":{
-        "message":"new version available",
-        "description":""
-    },
-    "hostsFilesExternalListObsolete":{
-        "message":"outdated",
-        "description":""
-    },
-    "assetsRecipesSection" : {
-        "message": "Ruleset recipes",
-        "description": "header to identify the ruleset files section"
-    },
-    "assetsRecipesSummary" : {
-        "message": "Ruleset recipes are imported from the popup panel <em>on demand</em>, i.e. <b>only</b> through user interaction.",
-        "description": ""
-    },
-    "assetsImportLabel" : {
-        "message": "Import...",
-        "description": ""
-    },
-    "assetsInlineHostsLabel": {
-        "message": "My hosts",
-        "description": ""
-    },
-    "assetsInlineRecipesLabel": {
-        "message": "My recipes",
-        "description": ""
-    },
-
     "rawSettingsWarning" : {
         "message": "Warning! Change these raw configuration settings at your own risk.",
         "description": ""
     },
-
     "aboutChangelog" : {
-        "message": "<a href='https://github.com/gorhill/uMatrix/releases'>Change log</a>",
+        "message": "<a href='https://github.com/BPower0036/uMatrix/releases'>Change log</a>",
         "description": ""
     },
     "aboutStorageUsed" : {
@@ -712,7 +612,7 @@
         "description": ""
     },
     "aboutCode" : {
-        "message": "Source code (GPLv3)",
+        "message": "Source code",
         "description": ""
     },
     "aboutIssues" : {
@@ -771,7 +671,6 @@
         "message": "Caution! this will remove all your custom settings. Are you sure you want to proceed?",
         "description": "Message asking user to confirm reset"
     },
-
     "mainBlockedPrompt1": {
         "message": "uMatrix has prevented the following page from loading:",
         "description": "English: uMatrix has prevented the following page from loading:"
@@ -792,7 +691,6 @@
         "message": "Close",
         "description": "English: Close"
     },
-
     "commandRevertAll" : {
         "message": "Revert all temporary changes",
         "description": ""
@@ -809,7 +707,6 @@
         "message": "Open dashboard",
         "description": ""
     },
-
     "elapsedOneMinuteAgo":{
         "message":"a minute ago",
         "description":"English: a minute ago"
@@ -834,7 +731,6 @@
         "message":"{{value}} days ago",
         "description":"English: {{value}} days ago"
     },
-
     "showDashboardButton":{
         "message":"Dashboard",
         "description":"Appears in Firefox's add-on preferences"
@@ -842,23 +738,6 @@
     "showLoggerButton":{
         "message":"Logger",
         "description":"Appears in Firefox's add-on preferences"
-    },
-
-    "cloudPush": {
-        "message": "Export to cloud storage",
-        "description": "tooltip"
-    },
-    "cloudPull": {
-        "message": "Import from cloud storage",
-        "description": "tooltip"
-    },
-    "cloudNoData": {
-        "message": "...\n...",
-        "description": ""
-    },
-    "cloudDeviceNamePrompt": {
-        "message": "This device name:",
-        "description": "used as a prompt for the user to provide a custom device name"
     },
     "genericSubmit": {
         "message": "Submit",
@@ -868,12 +747,10 @@
         "message": "Revert",
         "description": "for generic 'revert' buttons"
     },
-
     "errorCantConnectTo":{
         "message":"Network error: Unable to connect to {{url}}",
         "description":""
     },
-
     "genericApplyChanges": {
         "message": "Apply changes",
         "description": "for generic 'Apply changes' buttons"

@@ -89,10 +89,10 @@ const rawSettingsDefault = {
             'repeat scroll #fff'
         ].join(''),
     placeholderBorder: '1px solid rgba(0, 0, 0, 0.1)',
-    imagePlaceholder: true,
+    imagePlaceholder: false,
     imagePlaceholderBackground: 'default',
     imagePlaceholderBorder: 'default',
-    framePlaceholder: true,
+    framePlaceholder: false,
     framePlaceholderDocument:
         [
             '<html><head>',
@@ -139,11 +139,10 @@ return {
         autoUpdate: true,
         clearBrowserCache: true,
         clearBrowserCacheAfter: 60,
-        cloudStorageEnabled: false,
         collapseBlacklisted: true,
-        collapseBlocked: false,
+        collapseBlocked: true,
         colorBlindFriendly: false,
-        deleteCookies: false,
+        deleteCookies: true,
         deleteUnusedSessionCookies: false,
         deleteUnusedSessionCookiesAfter: 60,
         deleteLocalStorage: false,
@@ -152,10 +151,10 @@ return {
         externalRecipeFiles: [],
         iconBadgeEnabled: true,
         noTooltips: false,
-        popupCollapseAllDomains: false,
+        popupCollapseAllDomains: true,
         popupCollapseBlacklistedDomains: false,
         popupScopeLevel: 'domain',
-        processHyperlinkAuditing: true,
+        processHyperlinkAuditing: false,
         selectedHostsFiles: [ '' ],
         selectedRecipeFiles: [ '' ],
         userHosts: {
@@ -241,4 +240,3 @@ return {
 })();
 
 /******************************************************************************/
-

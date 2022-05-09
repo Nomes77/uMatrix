@@ -30,7 +30,6 @@
 /******************************************************************************/
 
 self.cloud = {
-    options: {},
     datakey: '',
     data: undefined,
     onPush: null,
@@ -111,80 +110,6 @@ const pullAndMergeData = function() {
         self.cloud.onPull(self.cloud.data, true);
     }
 };
-
-/******************************************************************************/
-
-const openOptions = function() {
-    const input = uDom.nodeFromId('cloudDeviceName');
-    input.value = self.cloud.options.deviceName;
-    input.setAttribute('placeholder', self.cloud.options.defaultDeviceName);
-    uDom.nodeFromId('cloudOptions').classList.add('show');
-};
-
-/******************************************************************************/
-
-const closeOptions = function(ev) {
-    const root = uDom.nodeFromId('cloudOptions');
-    if ( ev.target !== root ) { return; }
-    root.classList.remove('show');
-};
-
-/******************************************************************************/
-
-const submitOptions = function() {
-    vAPI.messaging.send('cloud-ui.js', {
-        what: 'cloudSetOptions',
-        options: {
-            deviceName: uDom.nodeFromId('cloudDeviceName').value
-        }
-    }).then(options => {
-        if ( typeof options !== 'object' || options === null ) { return; }
-        self.cloud.options = options;
-    });
-    uDom.nodeFromId('cloudOptions').classList.remove('show');
-};
-
-/******************************************************************************/
-
-vAPI.messaging.send('cloud-ui.js', {
-    what: 'cloudGetOptions'
-}).then(options => {
-    if ( typeof options !== 'object' || options === null ) { return; }
-
-    if ( !options.enabled ) { return; }
-    self.cloud.options = options;
-
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'cloud-ui.html', true);
-    xhr.overrideMimeType('text/html;charset=utf-8');
-    xhr.responseType = 'text';
-    xhr.onload = function() {
-        this.onload = null;
-        const parser = new DOMParser();
-        const parsed = parser.parseFromString(this.responseText, 'text/html');
-        const fromParent = parsed.body;
-        while ( fromParent.firstElementChild !== null ) {
-            widget.appendChild(
-                document.adoptNode(fromParent.firstElementChild)
-            );
-        }
-
-        faIconsInit(widget);
-
-        vAPI.i18n.render(widget);
-        widget.classList.remove('hide');
-
-        uDom('#cloudPush').on('click', pushData);
-        uDom('#cloudPull').on('click', pullData);
-        uDom('#cloudPullAndMerge').on('click', pullAndMergeData);
-        uDom('#cloudCog').on('click', openOptions);
-        uDom('#cloudOptions').on('click', closeOptions);
-        uDom('#cloudOptionsSubmit').on('click', submitOptions);
-
-        fetchCloudData();
-    };
-    xhr.send();
-});
 
 /******************************************************************************/
 

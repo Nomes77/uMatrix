@@ -94,7 +94,6 @@ const onInputChanged = function(ev) {
         changeUserSettings('displayTextSize', target.value + 'px');
         break;
     case 'clearBrowserCache':
-    case 'cloudStorageEnabled':
     case 'collapseBlacklisted':
     case 'collapseBlocked':
     case 'colorBlindFriendly':

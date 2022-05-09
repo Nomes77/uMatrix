@@ -1,0 +1,17 @@
+{
+	"assets.json": {
+		"content": "internal",
+		"updateAfter": 13,
+		"contentURL": [
+			"assets/assets.json"
+		]
+	},
+	"public_suffix_list.dat": {
+		"content": "internal",
+		"updateAfter": 19,
+		"contentURL": [
+			"https://publicsuffix.org/list/public_suffix_list.dat",
+			"assets/thirdparties/publicsuffix.org/list/effective_tld_names.dat"
+		]
+	}
+}

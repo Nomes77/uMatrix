@@ -31,10 +31,6 @@
         "message": "Meine Regeln",
         "description": "a tab in dashboard"
     },
-    "ubiquitousRulesPageName": {
-        "message": "Assets",
-        "description": "a tab in dashboard"
-    },
     "rawSettingsPageName": {
         "message": "Mehr",
         "description": "a tab in dashboard"
@@ -154,14 +150,6 @@
     "matrixNoTabFound": {
         "message": "Keine Webseite gefunden",
         "description": "Displays in place of matrix when no data is found for the current page"
-    },
-    "matrixRecipeImportTip": {
-        "message": "Regeln importieren",
-        "description": "Used as a tooltip for the recipe import button"
-    },
-    "matrixRecipeSaveTip": {
-        "message": "Regeln speichern",
-        "description": "Used as a tooltip for the recipe padlock button"
     },
     "statsPageTitle": {
         "message": "µMatrix &ndash; Statistik",
@@ -603,88 +591,12 @@
         "message": "my-umatrix-rules.txt",
         "description": "default file name to use"
     },
-    "assetsHostsSection": {
-        "message": "Hosts-Dateien",
-        "description": "header to identify the hosts files section"
-    },
-    "hostsFilesPrompt": {
-        "message": "Alle Hostnamen einer Hosts-Datei werden als geblacklistete Hostnamen im globalen Geltungsbereich geladen.",
-        "description": ""
-    },
-    "hostsFilesStats": {
-        "message": "{{blockedHostnameCount}} eindeutig blockierte Hostnamen aus:",
-        "description": ""
-    },
-    "hostsFilesPerFileStats": {
-        "message": "{{used}} benutzt aus {{total}}",
-        "description": ""
-    },
-    "hostsFilesLastUpdate": {
-        "message": "Letzte Aktualisierung: {{ago}}",
-        "description": "English: Last update: {{ago}}, where 'ago' will be replaced with something like '2 days ago'"
-    },
-    "hostsFilesApplyChanges": {
-        "message": "Änderungen anwenden",
-        "description": ""
-    },
-    "hostsFilesAutoUpdatePrompt": {
-        "message": "Automatische Aktualisierung der Assets",
-        "description": ""
-    },
-    "hostsFilesUpdateNow": {
-        "message": "Jetzt aktualisieren",
-        "description": ""
-    },
-    "hostsFilesPurgeAll": {
-        "message": "Alle Cache-Speicher löschen",
-        "description": ""
-    },
-    "hostsFilesExternalListsHint": {
-        "message": "Eine URL pro Zeile. Zeilen mit vorangestelltem &lsquo;#&rsquo; werden ignoriert. Ungültige URLs werden stillschweigend ignoriert.",
-        "description": ""
-    },
-    "hostsFilesExternalListsParse": {
-        "message": "Anwenden",
-        "description": ""
-    },
-    "hostsFilesExternalListPurge": {
-        "message": "Cache löschen",
-        "description": ""
-    },
-    "hostsFilesExternalListNew": {
-        "message": "Neue Version verfügbar",
-        "description": ""
-    },
-    "hostsFilesExternalListObsolete": {
-        "message": "veraltet",
-        "description": ""
-    },
-    "assetsRecipesSection": {
-        "message": "Rezepte für Regelsätze",
-        "description": "header to identify the ruleset files section"
-    },
-    "assetsRecipesSummary": {
-        "message": "Rezepte für Regelsätze werden <em>auf Anforderung</em>, d.h. <b>nur</b> durch eine Aktion des Benutzers, über das Popup-Panel importiert.",
-        "description": ""
-    },
-    "assetsImportLabel": {
-        "message": "Importieren...",
-        "description": ""
-    },
-    "assetsInlineHostsLabel": {
-        "message": "Meine Hostnamen",
-        "description": ""
-    },
-    "assetsInlineRecipesLabel": {
-        "message": "Meine Rezepte",
-        "description": ""
-    },
     "rawSettingsWarning": {
         "message": "Warnung! Die Änderung dieser Konfigurations-Einstellungen erfolgt auf eigenes Risiko.",
         "description": ""
     },
     "aboutChangelog": {
-        "message": "<a href='https://github.com/gorhill/uMatrix/releases'>Änderungsprotokoll</a>",
+        "message": "<a href='https://github.com/BPower0036/uMatrix/releases'>Änderungsprotokoll</a>",
         "description": ""
     },
     "aboutStorageUsed": {
@@ -700,7 +612,7 @@
         "description": ""
     },
     "aboutCode": {
-        "message": "Quellcode (GPLv3)",
+        "message": "Quellcode",
         "description": ""
     },
     "aboutIssues": {
@@ -826,22 +738,6 @@
     "showLoggerButton": {
         "message": "Protokoll",
         "description": "Appears in Firefox's add-on preferences"
-    },
-    "cloudPush": {
-        "message": "Export in den Cloud-Speicher",
-        "description": "tooltip"
-    },
-    "cloudPull": {
-        "message": "Import aus dem Cloud-Speicher",
-        "description": "tooltip"
-    },
-    "cloudNoData": {
-        "message": "...\n...",
-        "description": ""
-    },
-    "cloudDeviceNamePrompt": {
-        "message": "Dieser Gerätename:",
-        "description": "used as a prompt for the user to provide a custom device name"
     },
     "genericSubmit": {
         "message": "Absenden",

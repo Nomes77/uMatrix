@@ -534,13 +534,6 @@ const stringIsNotEmpty = function(s) {
 
 **/
 
-/*******************************************************************************
-
-    User assets are NOT persisted in the cache storage. User assets are
-    recognized by the asset key which always starts with 'user-'.
-
-**/
-
 const readUserAsset = async function(assetKey) {
     const bin = await vAPI.storage.get(assetKey);
     const content =
