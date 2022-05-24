@@ -35,6 +35,10 @@
         "message": "More",
         "description": "a tab in dashboard"
     },
+    "maximizeAllBrowserWindows": {
+        "message": "Maximize All Windows",
+        "description": "a tab in dashboard"
+    },
     "aboutPageName": {
         "message": "About",
         "description": "a tab in dashboard"
