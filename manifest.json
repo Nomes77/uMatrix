@@ -15,10 +15,16 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "@uMatrix",
-      "strict_min_version": "56.0",
+      "strict_min_version": "70.0",
       "update_url": "https://raw.githubusercontent.com/BPower0036/uMatrix/main/update.json"
     }
   },
+  "commands": {
+    "duplicate-tab": {
+      "suggested_key": { "default": "Shift+Alt+D" },
+      "description": "Duplicate the current tab"
+    }
+  }
   "content_scripts": [
     {
       "all_frames": true,
@@ -70,5 +76,5 @@
     "<all_urls>"
   ],
   "short_name": "uMatrix",
-  "version": "1.3.0"
+  "version": "1.4.0"
 }
