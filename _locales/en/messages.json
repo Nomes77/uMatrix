@@ -35,17 +35,9 @@
         "message": "More",
         "description": "a tab in dashboard"
     },
-    "otherOptions" {
+    "otherOptions": {
         "message": "Other Options",
         "description": "a tab in dashboard"
-    },
-    "duplicateTab" {
-        "message": "To configure the shortcuts, click 'Manage Extension Shortcuts' in the addon manager.",
-        "description": "duplicate tab discription"
-    },
-    "shortCut" {
-        "message": "The default shortcut is 'Shift+Alt+D'.",
-        "description": "duplicate tab discription"
     },
     "aboutPageName": {
         "message": "About",

@@ -39,17 +39,9 @@
         "message": "Over",
         "description": "a tab in dashboard"
     },
-    "otherOptions" {
+    "otherOptions": {
         "message": "Andere Opties",
         "description": "a tab in dashboard"
-    },
-    "duplicateTab" {
-        "message": "Om de sneltoetsen te configureren, klikt u op 'Extensiesneltoetsen beheren' in de addonmanager.",
-        "description": "duplicate tab discription"
-    },
-    "shortCut" {
-        "message": "De standaard sneltoets is 'Shift+Alt+D'.",
-        "description": "duplicate tab discription"
     },
     "allPrettyName": {
         "message": "alle",
