@@ -33,16 +33,15 @@ body {
     }
 .tabButton {
     margin: 0;
-    border: 1px solid #ccc;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     padding: 4px;
     display: inline-block;
     position: relative;
-    top: 1px;
     color: black;
     background-color: #eee;
     font: inherit;
+    font-size: 16px;
     cursor: pointer;
     text-decoration: none;
     }
@@ -53,8 +52,8 @@ body {
     color: inherited;
     }
 .tabButton.selected {
-    border-bottom: 1px solid white;
-    background-color: white;
+    border-bottom: 2px solid blue !important;
+    background-color: azure;
     }
 iframe {
     background-color: transparent;
