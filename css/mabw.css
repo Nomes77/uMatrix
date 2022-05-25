@@ -2,8 +2,12 @@ body {
     padding-left: 10px !important;
 }
 h4 {
+    margin-top: 10px;
     margin-bottom: 0px;
 }
 h5 {
     margin: 0px;
+}
+h3 {
+    margin-bottom: 2px;
 }

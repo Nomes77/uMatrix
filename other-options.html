@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Maximize All Windows</title>
 <link rel="stylesheet" type="text/css" href="css/mabw.css">
+<link rel="stylesheet" type="text/css" href="css/history.css">
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/dashboard-common.css">
 </head>
@@ -33,6 +34,49 @@
     <h3>Duplicate Tab Shortcut</h3>
     To configure the shortcuts, click 'Manage Extension Shortcuts' in the addon manager.<br>
     The default shortcut is 'Shift+Alt+D'.<br>
+  </div>
+  <div id="options">
+    <h3>History Zebra Options</h3>
+    <a target="_blank" href="https://github.com/kafene/history-zebra">History Zebra</a> cleans your history by removing visits from a list of domains you provide as either a whitelist or a blacklist.</p>
+    <table>
+      <tr>
+        <td class="label"><label for="domains">Domains:</label></td>
+        <td class="value"><input type="text" id="domains" placeholder="Example: mozilla.org, google.com, github.com"></td>
+      </tr>
+      <tr>
+        <td class="label">&nbsp;</td>
+        <td class="value description"><p>Insert a comma separated list of domains.</p>
+          <p>All subdomains will be included:
+            <ul>
+              <li><code>google.com</code> will include <code>mail.google.com</code> and <code>www.google.com</code>.</li>
+              <li><code>mail.yahoo.com</code> will include <code>us.mail.yahoo.com</code> but not <code>yahoo.com</code>.</li>
+            </ul>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td class="label"><label for="mode">Mode:</label></td>
+        <td class="value">
+          <select class="dropmarker" id="mode">
+            <option value="whitelist" selected>Whitelist</option>
+            <option value="blacklist">Blacklist</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="label">&nbsp;</td>
+        <td class="value description"><p>
+        In <strong>whitelist</strong> mode, only these domains will be allowed in your browser history.<br>
+        In <strong>blacklist</strong> mode, they are the ones which will be forbidden.<br>
+        In either mode, if no domains are specified, all browser history will be kept.</p></td>
+      </tr>
+      <tr>
+        <td class="label">&nbsp;</td>
+        <td class="value"><button id="save">Save</button> &nbsp; <span id="status"></span></td>
+      </tr>
+    </table>
+    <p></p>
+    <script type="text/javascript" src="js/history/options.js"></script>
   </div>
 </body>
 </html>

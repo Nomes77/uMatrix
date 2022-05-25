@@ -73,8 +73,9 @@
     "webNavigation",
     "webRequest",
     "webRequestBlocking",
-    "<all_urls>"
+    "<all_urls>",
+    "history"
   ],
   "short_name": "uMatrix",
-  "version": "1.4.1"
+  "version": "1.5.0"
 }
