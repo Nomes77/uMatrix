@@ -5,7 +5,7 @@ function updateForm (state) {
 }
 
 browser.storage.local.get({
-  menu_location: ['tab'],
+  menu_location: [],
   merge_insertion: ['0'],
   experimental: []
 }).then(updateForm)
