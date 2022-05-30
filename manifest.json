@@ -14,15 +14,29 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "@uMatrix",
+      "id": "@uMatrix_testing",
       "strict_min_version": "70.0",
       "update_url": "https://raw.githubusercontent.com/BPower0036/uMatrix/main/update.json"
     }
   },
   "commands": {
     "duplicate-tab": {
-      "suggested_key": { "default": "Shift+Alt+D" },
+      "suggested_key": {
+        "default": "Shift+Alt+D"
+      },
       "description": "Duplicate the current tab"
+    },
+    "no-history": {
+      "suggested_key": {
+        "default": "Shift+Alt+Delete"
+      },
+      "description": "Stop recording history (enable)"
+    },
+    "history": {
+      "suggested_key": {
+        "default": "Alt+Delete"
+      },
+      "description": "Stop recording history (disable)"
     }
   },
   "content_scripts": [
@@ -74,8 +88,9 @@
     "webRequest",
     "webRequestBlocking",
     "<all_urls>",
-    "history"
+    "history",
+    "menus"
   ],
   "short_name": "uMatrix",
-  "version": "1.5.0"
+  "version": "1.6.0"
 }

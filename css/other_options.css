@@ -1,0 +1,106 @@
+body {
+    padding-left: 10px !important;
+}
+h3 {
+    margin-bottom: 2px;
+}
+h3 > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+code {
+    line-height: 1rem;
+    font-family: monospace;
+    font-size: 12px;
+    padding: 2px 4px;
+    background-color: #f7f7f9;
+    border-radius: 3px;
+    color: #b02;
+}
+input[type=text] {
+    margin: 2px 0;
+    padding: 2px 4px;
+    line-height: 20px;
+    min-height: 30px;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+}
+select {
+    min-width: 95px;
+}
+
+button, select {
+    margin: 2px 4px;
+}
+p {
+    margin: 0.33rem 0.18rem;
+}
+#options > div > p,
+#options > p {
+    margin-top: 1.5rem;
+}
+ul {
+    margin: 0;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid #ccc;
+    padding: 0.2rem 0.4rem;
+}
+td.label {
+    text-align: right;
+    vertical-align: middle;
+    font-weight: bold;
+}
+td.value input[type=text] {
+    vertical-align: top;
+    width: 98.5%;
+}
+table > tbody td.value:nth-of-type(2):not(:hover, :active, :focus-within) #domains {
+    visibility: hidden;
+}
+#status {
+    font-weight: bold;
+    font-size: small;
+    color: green;
+}
+#save {
+    font-weight: bold;
+    line-height: 20px;
+}
+
+
+
+
+.container {
+  display: flex;
+  width: 50%;
+}
+#keywords {
+  width: -moz-available;
+}
+#content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #FFFFCC;
+  width: 25%;
+  transform: translateX(25%);
+}
+#content > #list > .li-button {
+  display: flex;
+}
+.del-button {
+  cursor: pointer;
+  color: red;
+  height: 100%;
+  position: fixed;
+  transform: translateX(4000%);
+}
