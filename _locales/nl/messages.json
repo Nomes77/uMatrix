@@ -756,7 +756,7 @@
         "description": ""
     },
     "MinimizeAfterAction": {
-        "message": "Minimilisser vensters die waren gemininmaliseerd voor het maxiliseren.",
+        "message": "Minimiliseer vensters die waren gemininmaliseerd voor het maxiliseren.",
         "description": ""
     },
     "History": {
@@ -828,7 +828,7 @@
         "description": ""
     },
     "HistoryKeywordsPlaceholder": {
-        "message": "Typ trefwoorden. Meerdere trefwoorden kunnen worden gescheiden door witruimte",
+        "message": "Typ trefwoorden. Trefwoorden kunnen worden gescheiden door spaties",
         "description": ""
     },
     "AddKeywords": {

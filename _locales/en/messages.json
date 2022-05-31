@@ -828,7 +828,7 @@
         "description": ""
     },
     "HistoryKeywordsPlaceholder": {
-        "message": "Type keywords. Multiple keywords can be separated by whitespace",
+        "message": "Type keywords. Keywords can be separated by whitespace",
         "description": ""
     },
     "AddKeywords": {
