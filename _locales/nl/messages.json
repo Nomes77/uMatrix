@@ -742,5 +742,133 @@
     "genericCopyToClipboard": {
         "message": "Kopiëren naar klembord",
         "description": "Label for buttons used to copy something to the clipboard"
+    },
+    "MaximizeAllWindows": {
+        "message": "Maximiliseer Alle Vensters",
+        "description": ""
+    },
+    "MaximizeOnStartup": {
+        "message": "Maximiliseer venster bij het opstarten van de browser.",
+        "description": ""
+    },
+    "MazimizeOnCreated": {
+        "message": "Maximiliseer vensters als ze worden gemaakt.",
+        "description": ""
+    },
+    "MinimizeAfterAction": {
+        "message": "Minimilisser vensters die waren gemininmaliseerd voor het maxiliseren.",
+        "description": ""
+    },
+    "History": {
+        "message": "Geschiedenis",
+        "description": ""
+    },
+    "StopRecording": {
+        "message": "Stop met het opnemen van de geschiedenis (gebruik 'Shift+Alt+Delete' om in te schakelen of 'Alt+Delete' om uit te schakelen).",
+        "description": ""
+    },
+    "HistoryZebra": {
+        "message": "Geschienis Zebra",
+        "description": ""
+    },
+    "HistoryZebraDescription": {
+        "message": " reinigt uw geschiedenis door bezoeken te verwijderen uit een lijst met domeinen die u opgeeft als een witte lijst of een zwarte lijst.",
+        "description": ""
+    },
+    "Domains": {
+        "message": "Domeinen:",
+        "description": ""
+    },
+    "DomainsPlaceholder": {
+        "message": "Bijvoorbeeld: mozilla.org, google.com, github.com",
+        "description": ""
+    },
+    "DomainsList": {
+        "message": "Voeg een door komma's gescheiden lijst van domeinen in.",
+        "description": ""
+    },
+    "Subdomains": {
+        "message": "Alle subdomeinen worden opgenomen:",
+        "description": ""
+    },
+    "SubdomainInlcude1": {
+        "message": "<code>google.com</code> omvat <code>mail.google.com</code> en <code>www.google.com</code>.",
+        "description": ""
+    },
+    "SubdomainInlcude2": {
+        "message": "<code>mail.yahoo.com</code> omvat <code>us.mail.yahoo.com</code> maar niet <code>yahoo.com</code>.",
+        "description": ""
+    },
+    "Mode": {
+        "message": "Modus:",
+        "description": ""
+    },
+    "ModeDescription1": {
+        "message": "In <b>whitelist</b> modus, alleen deze domeinen zijn toegestaan in uw browsergeschiedenis.",
+        "description": ""
+    },
+    "ModeDescription2": {
+        "message": "In <b>blacklist</b> modus, zij zijn degenen die verboden zullen worden.",
+        "description": ""
+    },
+    "ModeDescription3": {
+        "message": "Als er in beide modi geen domeinen zijn opgegeven, wordt alle browsergeschiedenis bewaard.",
+        "description": ""
+    },
+    "Save": {
+        "message": "Opslaan",
+        "description": ""
+    },
+    "HistoryKeywordCleaner": {
+        "message": "Geschiedenis Trefwoordenreiniger",
+        "description": ""
+    },
+    "HistoryKeywordCleanerDescription": {
+        "message": " verwijdert automatisch pagina's die overeenkomen met bepaalde trefwoorden uit de browsergeschiedenis.",
+        "description": ""
+    },
+    "HistoryKeywordsPlaceholder": {
+        "message": "Typ trefwoorden. Meerdere trefwoorden kunnen worden gescheiden door witruimte",
+        "description": ""
+    },
+    "AddKeywords": {
+        "message": "Voeg trefwoorden toe",
+        "description": ""
+    },
+    "ShowKeywords": {
+        "message": "Laat trefwoorden zien",
+        "description": ""
+    },
+    "WindowMerger": {
+        "message": "<a href='https://github.com/Zegnat/browserext-window-merger/'>Venster Fusie</a>",
+        "description": ""
+    },
+    "WindowMergerContextMenu": {
+        "message": "Schakel contextmenu tabbalk in.",
+        "description": ""
+    },
+    "WindowMergerExperimental": {
+        "message": "Schakel gedeeltelijke vensters samenvoeging in.",
+        "description": ""
+    },
+    "WindowMergerEnd": {
+        "message": "Aan het einde van het huidige venster (standaard)",
+        "description": ""
+    },
+    "WindowMergerFocus": {
+        "message": "Na het huidige actieve tabblad",
+        "description": ""
+    },
+    "DuplicateTab": {
+        "message": "<a href='https://github.com/stefansundin/duplicate-tab/'>Dupliceer Tabblad Sneltoetsen</a>",
+        "description": ""
+    },
+    "DuplicateTabDescription1": {
+        "message": "Om de sneltoets te configureren, klikt u op 'Extensiesneltoetsen beheren' in de add-onmanager.",
+        "description": ""
+    },
+    "DuplicateTabDescription2": {
+        "message": "De standaard sneltoets is 'Shift+Alt+D'.",
+        "description": ""
     }
 }
