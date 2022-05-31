@@ -744,19 +744,19 @@
         "description": "Label for buttons used to copy something to the clipboard"
     },
     "MaximizeAllWindows": {
-        "message": "Maximiliseer Alle Vensters",
+        "message": "Maximaliseer Alle Vensters",
         "description": ""
     },
     "MaximizeOnStartup": {
-        "message": "Maximiliseer venster bij het opstarten van de browser.",
+        "message": "Maximaliseer venster bij het opstarten van de browser.",
         "description": ""
     },
     "MazimizeOnCreated": {
-        "message": "Maximiliseer vensters als ze worden gemaakt.",
+        "message": "Maximaliseer vensters als ze worden gemaakt.",
         "description": ""
     },
     "MinimizeAfterAction": {
-        "message": "Minimiliseer vensters die waren geminimaliseerd voor het maxiliseren.",
+        "message": "Minimaliseer vensters die waren geminimaliseerd voor het maximaliseren.",
         "description": ""
     },
     "History": {
