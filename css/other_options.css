@@ -85,7 +85,7 @@ table > tbody td.value:nth-of-type(2):not(:hover, :active, :focus-within) #domai
   width: 50%;
 }
 #keywords {
-  width: -moz-available;
+  width: 85%;
 }
 #content {
   max-height: 0;
