@@ -10,36 +10,35 @@
 
 <body>
   <div id="options">
-    <h3><a target="_blank" href="https://github.com/ericchase/maximize-all-windows">Maximize All Windows</a></h3>
-    <input id="maximize-on-startup" type="checkbox"> <label for="maximize-on-startup">Maximize windows on browser startup.</label><br>
-    <input id="maximize-on-created" type="checkbox"> <label for="maximize-on-created">Maximize windows when they are created.</label><br>
-    <input id="minimize-after-action" type="checkbox"> <label for="minimize-after-action">Minimize windows that were minimized before maximizing.</label><br>
-    <h3>History</h3>
-    <input id="no-history" type="checkbox"> <label>Stop recording history (use 'Shift+Alt+Delete' to enable or 'Alt+Delete' to disable)</label>
+    <h3><a target="_blank" href="https://github.com/ericchase/maximize-all-windows" data-i18n="MaximizeAllWindows"></a></h3>
+    <input id="maximize-on-startup" type="checkbox"> <label for="maximize-on-startup" data-i18n="MaximizeOnStartup"></label><br>
+    <input id="maximize-on-created" type="checkbox"> <label for="maximize-on-created" data-i18n="MazimizeOnCreated"></label><br>
+    <input id="minimize-after-action" type="checkbox"> <label for="minimize-after-action" data-i18n="MinimizeAfterAction"></label><br>
+    <h3 data-i18n="History"></h3>
+    <input id="no-history" type="checkbox"> <label data-i18n="StopRecording"></label>
     <script type="text/javascript" src="js/other_options/popup.js"></script>
     <p></p>
   </div>
   <div id="options">
-    <a target="_blank" href="https://github.com/kafene/history-zebra/">History Zebra</a>
-    cleans your history by removing visits from a list of domains you provide as either a whitelist or a blacklist.<br>
+    <a target="_blank" href="https://github.com/kafene/history-zebra/" data-i18n="HistoryZebra"></a><span data-i18n="HistoryZebraDescription"></span><br>
     <table>
       <tr>
-        <td class="label"><label for="domains">Domains:</label></td>
-        <td class="value"><input type="text" id="domains" placeholder="Example: mozilla.org, google.com, github.com"></td>
+        <td class="label"><label for="domains" data-i18n="Domains"></label></td>
+        <td class="value"><input type="text" id="domains" placeholder="DomainsPlaceholder"></td>
       </tr>
       <tr>
         <td class="label">&nbsp;</td>
-        <td class="value description"><p>Insert a comma separated list of domains.</p>
-          <p>All subdomains will be included:
+        <td class="value description"><p data-i18n="DomainsList"></p>
+          <p data-i18n="Subdomains">
             <ul>
-              <li><code>google.com</code> will include <code>mail.google.com</code> and <code>www.google.com</code>.</li>
-              <li><code>mail.yahoo.com</code> will include <code>us.mail.yahoo.com</code> but not <code>yahoo.com</code>.</li>
+              <li data-i18n="SubdomainInlcude1"></li>
+              <li data-i18n="SubdomainInlcude2"></li>
             </ul>
           </p>
         </td>
       </tr>
       <tr>
-        <td class="label"><label for="mode">Mode:</label></td>
+        <td class="label"><label for="mode" data-i18n="Mode"></label></td>
         <td class="value">
           <select class="dropmarker" id="mode">
             <option value="whitelist">Whitelist</option>
@@ -50,22 +49,21 @@
       <tr>
         <td class="label">&nbsp;</td>
         <td class="value description"><p>
-        In <strong>whitelist</strong> mode, only these domains will be allowed in your browser history.<br>
-        In <strong>blacklist</strong> mode, they are the ones which will be forbidden.<br>
-        In either mode, if no domains are specified, all browser history will be kept.</p>
+        <span data-i18n="ModeDescription1"></span><br>
+        <span data-i18n="ModeDescription2"></span><br>
+        <span data-i18n="ModeDescription3"></span></p>
       </tr>
       <tr>
         <td class="label">&nbsp;</td>
-        <td class="value"><button id="save">Save</button> &nbsp; <span id="status"></span></td>
+        <td class="value"><button id="save" data-i18n="Save"></button> &nbsp; <span id="status"></span></td>
       </tr>
     </table>
     <p></p>
-    <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/history-pages-cleaner/">History Keyword Cleaner</a>
-    automatically remove pages that match given keywords from browser history<br>
+    <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/history-pages-cleaner/" data-i18n="HistoryKeywordCleaner"></a><span data-i18n="HistoryKeywordCleanerDescription"></span><br>
     <div class="container">
-      <input type="text" id="keywords" placeholder="Type keywords. Multiple keywords can be separated by whitespace">
-      <button type="button" id="button">Add keywords</button>
-      <button type="button" id="collapsible">Show keywords</button>
+      <input type="text" id="keywords" placeholder="HistoryKeywordsPlaceholder">
+      <button type="button" id="button" data-i18n="AddKeywords"></button>
+      <button type="button" id="collapsible" data-i18n="ShowKeywords"></button>
     </div>
     <div id="content">
       <ul id="list">
@@ -75,27 +73,33 @@
     <p></p>
   </div>
   <div id="options">
-    <h3><a target="_blank" href="https://github.com/Zegnat/browserext-window-merger/">Window Merger</a></h3>
+    <h3 data-i18n="WindowMerger"></h3>
     <div>
       <input type="checkbox" name="menu_location" value="tab" id="tab_bar">
-      <label for="tab_bar">Enable tab bar context menu</label><br>
+      <label for="tab_bar" data-i18n="WindowMergerContextMenu"></label><br>
       <input type="checkbox" name="experimental" value="true" id="experimental">
-      <label for="experimental">Enable merge partial windows</label>
+      <label for="experimental" data-i18n="WindowMergerExperimental"></label>
     </div>
     <div>
       Choose where to merge tabs to:
       <input type="radio" name="merge_insertion" id="end" value="0">
-      <label for="end">At the end of the current window (default)</label>
+      <label for="end" data-i18n="WindowMergerEnd"></label>
       <input type="radio" name="merge_insertion" id="focus" value="1">
-      <label for="focus">After the current active tab</label>
+      <label for="focus" data-i18n="WindowMergerFocus"></label>
     </div>
     <script src="js/other_options/merger/preferences.js"></script>
     <p></p>
   </div>
   <div id="options">
-    <h3><a target="_blank" href="https://github.com/stefansundin/duplicate-tab/">Duplicate Tab Shortcut</a></h3>
-    To configure the shortcut, click 'Manage Extension Shortcuts' in the addon manager.<br>
-    The default shortcut is 'Shift+Alt+D'.<br>
+    <h3 data-i18n="DuplicateTab"></h3>
+    <span data-i18n="DuplicateTabDescription1"></span><br>
+    <span data-i18n="DuplicateTabDescription2"></span><br>
   </div>
+
+<script src="js/vapi.js"></script>
+<script src="js/vapi-common.js"></script>
+<script src="js/vapi-client.js"></script>
+<script src="js/udom.js"></script>
+<script src="js/i18n.js"></script>
 </body>
 </html>
