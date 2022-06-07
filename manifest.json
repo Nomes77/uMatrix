@@ -24,19 +24,19 @@
       "suggested_key": {
         "default": "Shift+Alt+D"
       },
-      "description": "Duplicate the current tab"
+      "description": "__MSG_toggleDuplicateTab__"
     },
     "no-history": {
       "suggested_key": {
         "default": "Shift+Alt+Delete"
       },
-      "description": "Stop recording history (enable)"
+      "description": "__MSG_toggleNoHistory__"
     },
     "history": {
       "suggested_key": {
         "default": "Alt+Delete"
       },
-      "description": "Stop recording history (disable)"
+      "description": "__MSG_toggleHistory__"
     }
   },
   "content_scripts": [

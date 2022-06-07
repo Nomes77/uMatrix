@@ -870,5 +870,17 @@
     "DuplicateTabDescription2": {
         "message": "The default shortcut is 'Shift+Alt+D'.",
         "description": ""
+    },
+    "toggleDuplicateTab": {
+        "message": "Duplicate the current tab",
+        "description": "shortcut"
+    },
+    "toggleNoHistory": {
+        "message": "Stop recording history (enable)",
+        "description": "shortcut"
+    },
+    "toggleHistory": {
+        "message": "Stop recording history (disable)",
+        "description": "shortcut"
     }
 }

@@ -764,11 +764,11 @@
         "description": ""
     },
     "StopRecording": {
-        "message": "Stop met het opnemen van de geschiedenis (gebruik 'Shift+Alt+Delete' om in te schakelen of 'Alt+Delete' om uit te schakelen).",
+        "message": "Stop het opnemen van de geschiedenis (gebruik 'Shift+Alt+Delete' om in te schakelen of 'Alt+Delete' om uit te schakelen).",
         "description": ""
     },
     "HistoryZebra": {
-        "message": "Geschienis Zebra",
+        "message": "Geschiedenis Zebra",
         "description": ""
     },
     "HistoryZebraDescription": {
@@ -870,5 +870,17 @@
     "DuplicateTabDescription2": {
         "message": "De standaard sneltoets is 'Shift+Alt+D'.",
         "description": ""
+    },
+    "toggleDuplicateTab": {
+        "message": "Dupliceer het huidige tabblad",
+        "description": "shortcut"
+    },
+    "toggleNoHistory": {
+        "message": "Stop het opnemen van geschiedenis (aan)",
+        "description": "shortcut"
+    },
+    "toggleHistory": {
+        "message": "Stop het opnemen van geschiedenis (uit)",
+        "description": "shortcut"
     }
 }
