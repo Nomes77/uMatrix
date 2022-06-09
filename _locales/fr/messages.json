@@ -738,5 +738,161 @@
     "genericCopyToClipboard": {
         "message": "Copier dans le presse-papier",
         "description": "Label for buttons used to copy something to the clipboard"
+    },
+    "MaximizeAllWindows": {
+        "message": "Maximize Windows",
+        "description": ""
+    },
+    "MaximizeOnStartup": {
+        "message": "Maximize windows on browser startup.",
+        "description": ""
+    },
+    "MaximizeOnCreated": {
+        "message": "Maximize windows when they are created:",
+        "description": ""
+    },
+    "MaximizeNormal": {
+        "message": "<code>Normal</code>",
+        "description": ""
+    },
+    "MaximizePopup": {
+        "message": "<code>Popup</code>",
+        "description": ""
+    },
+    "MaximizePanel": {
+        "message": "<code>Panel</code>",
+        "description": ""
+    },
+    "MaximizeDevtools": {
+        "message": "<code>Devtools</code>",
+        "description": ""
+    },
+    "MinimizeAfterAction": {
+        "message": "Minimize windows that were minimized before maximizing.",
+        "description": ""
+    },
+    "History": {
+        "message": "History",
+        "description": ""
+    },
+    "StopRecording": {
+        "message": "Stop recording history (use 'Shift+Alt+Delete' to enable or 'Alt+Delete' to disable).",
+        "description": ""
+    },
+    "HistoryZebra": {
+        "message": "History Zebra",
+        "description": ""
+    },
+    "HistoryZebraDescription": {
+        "message": " cleans your history by removing visits from a list of domains you provide as either a whitelist or a blacklist.",
+        "description": ""
+    },
+    "Domains": {
+        "message": "Domains:",
+        "description": ""
+    },
+    "DomainsPlaceholder": {
+        "message": "Example: mozilla.org, google.com, github.com",
+        "description": ""
+    },
+    "DomainsList": {
+        "message": "Insert a comma separated list of domains.",
+        "description": ""
+    },
+    "Subdomains": {
+        "message": "All subdomains will be included:",
+        "description": ""
+    },
+    "SubdomainInlcude1": {
+        "message": "<code>google.com</code> will include <code>mail.google.com</code> and <code>www.google.com</code>.",
+        "description": ""
+    },
+    "SubdomainInlcude2": {
+        "message": "<code>mail.yahoo.com</code> will include <code>us.mail.yahoo.com</code> but not <code>yahoo.com</code>.",
+        "description": ""
+    },
+    "Mode": {
+        "message": "Mode:",
+        "description": ""
+    },
+    "ModeDescription1": {
+        "message": "In <b>whitelist</b> mode, only these domains will be allowed in your browser history.",
+        "description": ""
+    },
+    "ModeDescription2": {
+        "message": "In <b>blacklist</b> mode, they are the ones which will be forbidden.",
+        "description": ""
+    },
+    "ModeDescription3": {
+        "message": "In either mode, if no domains are specified, all browser history will be kept.",
+        "description": ""
+    },
+    "Save": {
+        "message": "Save",
+        "description": ""
+    },
+    "HistoryKeywordCleaner": {
+        "message": "History Keyword Cleaner",
+        "description": ""
+    },
+    "HistoryKeywordCleanerDescription": {
+        "message": " automatically remove pages that match given keywords from browser history.",
+        "description": ""
+    },
+    "HistoryKeywordsPlaceholder": {
+        "message": "Type keywords. Keywords can be separated by whitespace",
+        "description": ""
+    },
+    "AddKeywords": {
+        "message": "Add keywords",
+        "description": ""
+    },
+    "ShowKeywords": {
+        "message": "Show keywords",
+        "description": ""
+    },
+    "WindowMerger": {
+        "message": "<a href='https://github.com/Zegnat/browserext-window-merger/'>Window Merger</a>",
+        "description": ""
+    },
+    "WindowMergerContextMenu": {
+        "message": "Enable tab bar context menu.",
+        "description": ""
+    },
+    "WindowMergerExperimental": {
+        "message": "Enable merge partial windows.",
+        "description": ""
+    },
+    "WindowMergerEnd": {
+        "message": "At the end of the current window (default)",
+        "description": ""
+    },
+    "WindowMergerFocus": {
+        "message": "After the current active tab",
+        "description": ""
+    },
+    "DuplicateTab": {
+        "message": "<a href='https://github.com/stefansundin/duplicate-tab/'>Duplicate Tab Shortcut</a>",
+        "description": ""
+    },
+    "DuplicateTabDescription1": {
+        "message": "To configure the shortcut, click 'Manage Extension Shortcuts' in the addon manager.",
+        "description": ""
+    },
+    "DuplicateTabDescription2": {
+        "message": "The default shortcut is 'Shift+Alt+D'.",
+        "description": ""
+    },
+    "toggleDuplicateTab": {
+        "message": "Duplicate the current tab",
+        "description": "shortcut"
+    },
+    "toggleNoHistory": {
+        "message": "Stop recording history (enable)",
+        "description": "shortcut"
+    },
+    "toggleHistory": {
+        "message": "Stop recording history (disable)",
+        "description": "shortcut"
     }
 }

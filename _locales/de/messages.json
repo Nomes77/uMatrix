@@ -738,5 +738,161 @@
     "genericCopyToClipboard": {
         "message": "Copy to clipboard",
         "description": "Label for buttons used to copy something to the clipboard"
+    },
+    "MaximizeAllWindows": {
+        "message": "Maximier Fenster",
+        "description": ""
+    },
+    "MaximizeOnStartup": {
+        "message": "Maximier Fenster beim Browser-Start.",
+        "description": ""
+    },
+    "MaximizeOnCreated": {
+        "message": "Maximier Fenster, wenn sie erstellt werden:",
+        "description": ""
+    },
+    "MaximizeNormal": {
+        "message": "<code>Normal</code>",
+        "description": ""
+    },
+    "MaximizePopup": {
+        "message": "<code>Popup</code>",
+        "description": ""
+    },
+    "MaximizePanel": {
+        "message": "<code>Panel</code>",
+        "description": ""
+    },
+    "MaximizeDevtools": {
+        "message": "<code>Devtools</code>",
+        "description": ""
+    },
+    "MinimizeAfterAction": {
+        "message": "Minimier minimierten Fenster, die vor Maximierung minimiert wurden.",
+        "description": ""
+    },
+    "History": {
+        "message": "Geschichte",
+        "description": ""
+    },
+    "StopRecording": {
+        "message": "Stop die Geschichte-aufzeichnung (verwenden Sie 'Shift+Alt+Delete', um zu aktivieren oder 'Alt+Delete' zu deaktivieren).",
+        "description": ""
+    },
+    "HistoryZebra": {
+        "message": "Geschichte Zebra",
+        "description": ""
+    },
+    "HistoryZebraDescription": {
+        "message": " reinigt Ihre Geschichte, indem Sie Besuche aus einer Liste von Domänen entfernen, die Sie entweder als Whitelist oder als Blacklist anbieten.",
+        "description": ""
+    },
+    "Domains": {
+        "message": "Domänen:",
+        "description": ""
+    },
+    "DomainsPlaceholder": {
+        "message": "Beispiel: mozilla.org, google.com, github.com",
+        "description": ""
+    },
+    "DomainsList": {
+        "message": "Füge eine von Kommas getrennte Liste von Domänen ein.",
+        "description": ""
+    },
+    "Subdomains": {
+        "message": "Alle Subdomänen werden enthalten sein:",
+        "description": ""
+    },
+    "SubdomainInlcude1": {
+        "message": "<code>google.com</code> wird beinhalten <code>mail.google.com</code> und <code>www.google.com</code>.",
+        "description": ""
+    },
+    "SubdomainInlcude2": {
+        "message": "<code>mail.yahoo.com</code> wird beinhalten <code>us.mail.yahoo.com</code> aber nicht <code>yahoo.com</code>.",
+        "description": ""
+    },
+    "Mode": {
+        "message": "Modus:",
+        "description": ""
+    },
+    "ModeDescription1": {
+        "message": "Im <b>Whitelist</b>-Modus nur diese Domänen dürfen in Ihrem Browsergeschichte zugelassen werden.",
+        "description": ""
+    },
+    "ModeDescription2": {
+        "message": "Im <b>Blacklist</b> -Modus sind sie diejenigen, die verboten sind.",
+        "description": ""
+    },
+    "ModeDescription3": {
+        "message": "Wenn in beiden Modi keine Domänen angegeben sind, wird der gesamte Browsergeschichte aufbewahrt.",
+        "description": ""
+    },
+    "Save": {
+        "message": "Speichern",
+        "description": ""
+    },
+    "HistoryKeywordCleaner": {
+        "message": "Geschichte Schlüsselwort Reiniger",
+        "description": ""
+    },
+    "HistoryKeywordCleanerDescription": {
+        "message": " entfernt automatisch Seiten, die angesichts der Schlüsselwörter aus dem Browsergeschichte übereinstimmen.",
+        "description": ""
+    },
+    "HistoryKeywordsPlaceholder": {
+        "message": "Gib Schlüsselwörter. Schlüsselwörter können durch Whitespace getrennt werden",
+        "description": ""
+    },
+    "AddKeywords": {
+        "message": "Fügen Schlüsselwörter hinzu",
+        "description": ""
+    },
+    "ShowKeywords": {
+        "message": "Zeig Schlüsselwörter",
+        "description": ""
+    },
+    "WindowMerger": {
+        "message": "<a href='https://github.com/Zegnat/browserext-window-merger/'>Fenster Fusion</a>",
+        "description": ""
+    },
+    "WindowMergerContextMenu": {
+        "message": "Aktivier Registerkarten-Bar Kontextmenü.",
+        "description": ""
+    },
+    "WindowMergerExperimental": {
+        "message": "Aktivier Teilfenster zusammenführung.",
+        "description": ""
+    },
+    "WindowMergerEnd": {
+        "message": "Am Ende des aktuellen Fensters (Standard)",
+        "description": ""
+    },
+    "WindowMergerFocus": {
+        "message": "Nach der aktuellen aktiven Registerkarte",
+        "description": ""
+    },
+    "DuplicateTab": {
+        "message": "<a href='https://github.com/stefansundin/duplicate-tab/'>Duplikat Registerkarte Shortcut</a>",
+        "description": ""
+    },
+    "DuplicateTabDescription1": {
+        "message": "Um die shortcut zu konfigurieren, klick 'Manage Extension Shortcuts' im Addon Manager.",
+        "description": ""
+    },
+    "DuplicateTabDescription2": {
+        "message": "Die Standardshortcut ist 'Shift+Alt+D'.",
+        "description": ""
+    },
+    "toggleDuplicateTab": {
+        "message": "Duplizier die aktuelle Registerkarte",
+        "description": "shortcut"
+    },
+    "toggleNoHistory": {
+        "message": "Halt die Aufzeichnung der Geschichte (Aktivier)",
+        "description": "shortcut"
+    },
+    "toggleHistory": {
+        "message": "Halt die Aufzeichnung der Geschichte (Deaktivier)",
+        "description": "shortcut"
     }
 }

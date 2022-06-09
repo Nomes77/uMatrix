@@ -744,15 +744,31 @@
         "description": "Label for buttons used to copy something to the clipboard"
     },
     "MaximizeAllWindows": {
-        "message": "Maximaliseer Alle Vensters",
+        "message": "Maximaliseer Vensters",
         "description": ""
     },
     "MaximizeOnStartup": {
-        "message": "Maximaliseer venster bij het opstarten van de browser.",
+        "message": "Maximaliseer vensters bij het opstarten van de browser.",
         "description": ""
     },
-    "MazimizeOnCreated": {
-        "message": "Maximaliseer vensters als ze worden gemaakt.",
+    "MaximizeOnCreated": {
+        "message": "Maximaliseer vensters als ze worden gemaakt:",
+        "description": ""
+    },
+    "MaximizeNormal": {
+        "message": "<code>Normal</code>",
+        "description": ""
+    },
+    "MaximizePopup": {
+        "message": "<code>Popup</code>",
+        "description": ""
+    },
+    "MaximizePanel": {
+        "message": "<code>Panel</code>",
+        "description": ""
+    },
+    "MaximizeDevtools": {
+        "message": "<code>Devtools</code>",
         "description": ""
     },
     "MinimizeAfterAction": {
@@ -844,11 +860,11 @@
         "description": ""
     },
     "WindowMergerContextMenu": {
-        "message": "Schakel contextmenu tabbalk in.",
+        "message": "Schakel tabbladbalkcontextmenu in.",
         "description": ""
     },
     "WindowMergerExperimental": {
-        "message": "Schakel gedeeltelijke vensters samenvoeging in.",
+        "message": "Schakel gedeeltelijke venstersamenvoeging in.",
         "description": ""
     },
     "WindowMergerEnd": {
@@ -860,7 +876,7 @@
         "description": ""
     },
     "DuplicateTab": {
-        "message": "<a href='https://github.com/stefansundin/duplicate-tab/'>Dupliceer Tabblad Sneltoetsen</a>",
+        "message": "<a href='https://github.com/stefansundin/duplicate-tab/'>Dupliceer Tabblad Sneltoets</a>",
         "description": ""
     },
     "DuplicateTabDescription1": {

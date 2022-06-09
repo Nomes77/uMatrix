@@ -744,15 +744,31 @@
         "description":"Label for buttons used to copy something to the clipboard"
     },
     "MaximizeAllWindows": {
-        "message": "Maximize All Windows",
+        "message": "Maximize Windows",
         "description": ""
     },
     "MaximizeOnStartup": {
         "message": "Maximize windows on browser startup.",
         "description": ""
     },
-    "MazimizeOnCreated": {
-        "message": "Maximize windows when they are created.",
+    "MaximizeOnCreated": {
+        "message": "Maximize windows when they are created:",
+        "description": ""
+    },
+    "MaximizeNormal": {
+        "message": "<code>Normal</code>",
+        "description": ""
+    },
+    "MaximizePopup": {
+        "message": "<code>Popup</code>",
+        "description": ""
+    },
+    "MaximizePanel": {
+        "message": "<code>Panel</code>",
+        "description": ""
+    },
+    "MaximizeDevtools": {
+        "message": "<code>Devtools</code>",
         "description": ""
     },
     "MinimizeAfterAction": {

@@ -5,11 +5,9 @@
 //  This module provides information about your extension and the environment it's running in.
 //
 //  It also provides messaging APIs enabling you to:
-//
 //    Communicate between different parts of your extension.
 //    Communicate with other extensions.
 //    Communicate with native applications.
-//
 //
 //  runtime.onStartup
 //  https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/runtime/onStartup
@@ -23,7 +21,10 @@ browser.runtime.onStartup.addListener(() => {
   browser.storage.local
     .get('maximize-on-startup')
     .then(results => {
-      if (results['maximize-on-startup'] === true) { maximize_all_windows() }
+      if (results['maximize-on-startup'] === true) { 
+        maximize_all_windows()
+        // or maximize_normal() because on browser startup it can never open popup, panel or devtools
+      }
     })
 })
 
@@ -78,6 +79,10 @@ browser.runtime.onInstalled.addListener(details => {
       .set({
         'maximize-on-startup': false,
         'maximize-on-created': false,
+        'maximize-normal': true,
+        'maximize-popup': false,
+        'maximize-panel': true,
+        'maximize-devtools': false,
         'minimize-after-action': false
       })
   }
@@ -91,7 +96,35 @@ browser.windows.onCreated.addListener(window => {
   browser.storage.local
     .get('maximize-on-created')
     .then(results => {
-      if (results['maximize-on-created'] === true)
-        maximize(window)
+      if (results['maximize-on-created'] === true) {
+        browser.storage.local
+          .get('maximize-normal')
+          .then(results => {
+             if (results['maximize-normal'] === true) {
+               maximize_normal()
+             }
+          });
+        browser.storage.local
+          .get('maximize-popup')
+          .then(results => {
+             if (results['maximize-popup'] === true) {
+               maximize_popup()
+             }
+          });
+        browser.storage.local
+          .get('maximize-panel')
+          .then(results => {
+             if (results['maximize-panel'] === true) {
+               maximize_panel()
+             }
+          });
+        browser.storage.local
+          .get('maximize-devtools')
+          .then(results => {
+             if (results['maximize-devtools'] === true) {
+               maximize_devtools()
+             }
+          })
+      }
     })
 })
