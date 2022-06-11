@@ -9,6 +9,10 @@ h3 > a {
     color: black;
 }
 
+#options input.options,
+#options input.options + label {
+    display: none;
+}
 
 
 

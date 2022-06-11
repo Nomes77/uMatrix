@@ -752,7 +752,7 @@
         "description": ""
     },
     "MaximizeOnCreated": {
-        "message": "Maximaliseer vensters als ze worden gemaakt:",
+        "message": "Maximaliseer vensters als ze worden gemaakt.",
         "description": ""
     },
     "MaximizeNormal": {

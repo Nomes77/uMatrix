@@ -3,9 +3,9 @@
     "@uMatrix": {
       "updates": [
         {
-          "version": "1.6.2",
+          "version": "1.6.3",
           "browser_specific_settings": { "gecko": { "strict_min_version": "70.0" } },
-          "update_link": "https://github.com/BPower0036/uMatrix/releases/download/1.6.2/uMatrix-1.6.2-fx.xpi"
+          "update_link": "https://github.com/BPower0036/uMatrix/releases/download/1.6.3/uMatrix-1.6.3-fx.xpi"
         }
       ]
     }

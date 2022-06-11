@@ -752,7 +752,7 @@
         "description": ""
     },
     "MaximizeOnCreated": {
-        "message": "Maximize windows when they are created:",
+        "message": "Maximize windows when they are created.",
         "description": ""
     },
     "MaximizeNormal": {
