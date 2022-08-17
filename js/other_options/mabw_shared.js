@@ -16,34 +16,34 @@ function maximize_all_windows () {
     .then(minimize_necessary)
     .then(bring_back_focus)
 }
-function maximize_normal () {
-  browser.windows
-    .getAll({ windowTypes: ['normal'] })
-    .then(maximize_all)
-    .then(minimize_necessary)
-    .then(bring_back_focus)
-}
-function maximize_popup () {
-  browser.windows
-    .getAll({ windowTypes: ['popup'] })
-    .then(maximize_all)
-    .then(minimize_necessary)
-    .then(bring_back_focus)
-}
-function maximize_panel () {
-  browser.windows
-    .getAll({ windowTypes: ['panel'] })
-    .then(maximize_all)
-    .then(minimize_necessary)
-    .then(bring_back_focus)
-}
-function maximize_devtools () {
-  browser.windows
-    .getAll({ windowTypes: ['devtools'] })
-    .then(maximize_all)
-    .then(minimize_necessary)
-    .then(bring_back_focus)
-}
+// function maximize_normal () {
+//   browser.windows
+//     .getAll({ windowTypes: ['normal'] })
+//     .then(maximize_all)
+//     .then(minimize_necessary)
+//     .then(bring_back_focus)
+// }
+// function maximize_popup () {
+//   browser.windows
+//     .getAll({ windowTypes: ['popup'] })
+//     .then(maximize_all)
+//     .then(minimize_necessary)
+//     .then(bring_back_focus)
+// }
+// function maximize_panel () {
+//   browser.windows
+//     .getAll({ windowTypes: ['panel'] })
+//     .then(maximize_all)
+//     .then(minimize_necessary)
+//     .then(bring_back_focus)
+// }
+// function maximize_devtools () {
+//   browser.windows
+//     .getAll({ windowTypes: ['devtools'] })
+//     .then(maximize_all)
+//     .then(minimize_necessary)
+//     .then(bring_back_focus)
+// }
 
 //  Each of these functions acts like part of a stream. No matter what happens, they return the
 //  arguments they receive without changing them. By doing this, it becomes very easy to chain

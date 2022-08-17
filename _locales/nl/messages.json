@@ -867,6 +867,10 @@
         "message": "Schakel gedeeltelijke venstersamenvoeging in.",
         "description": ""
     },
+    "WindowMergerOptions": {
+        "message": "Kies waar tabbladen worden samengevoegd:",
+        "description": ""
+    },
     "WindowMergerEnd": {
         "message": "Aan het einde van het huidige venster (standaard)",
         "description": ""

@@ -554,8 +554,10 @@ body.colorblind .rw .matCell.t2 #blacklist:hover {
     }
 
 /* No data was found for the tab */
-
-body.noTabFound .paneHead,
+body.noTabFound {
+    min-height: 5em;
+}
+body.noTabFound .paneHead #toolbarContainer,
 body.noTabFound .paneContent {
     display: none;
     }
@@ -564,7 +566,6 @@ body.noTabFound #noTabFound {
     color: gray;
     display: flex;
     font-size: xx-large;
-    height: 100vh;
     justify-content: center;
     }
 

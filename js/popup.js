@@ -1188,111 +1188,6 @@ uDom('#buttonReload').on('click', ev => {
 
 /******************************************************************************/
 
-const recipeManager = (( ) => {
-    const reScopeAlias = /(^|\s+)_(\s+|$)/g;
-    let recipes = [];
-
-    const createEntry = function(name, ruleset, parent) {
-        const li = document.querySelector('#templates li.recipe')
-                         .cloneNode(true);
-        li.querySelector('.name').textContent = name;
-        li.querySelector('.ruleset').textContent = ruleset;
-        if ( parent ) {
-            parent.appendChild(li);
-        }
-        return li;
-    };
-
-    const apply = function(ev) {
-        if (
-            ev.target.classList.contains('expander') ||
-            ev.target.classList.contains('name')
-        ) {
-            ev.currentTarget.classList.toggle('expanded');
-            return;
-        }
-        if (
-            ev.target.classList.contains('importer') === false &&
-            ev.target.classList.contains('committer') === false
-        ) {
-            return;
-        }
-        const root = ev.currentTarget;
-        const ruleset = root.querySelector('.ruleset');
-        const commit = ev.target.classList.contains('committer');
-        vAPI.messaging.send('popup.js', {
-            what: 'applyRecipe',
-            ruleset: ruleset.textContent,
-            commit,
-        }).then(( ) => {
-            updateMatrixSnapshot();
-        });
-        root.classList.remove('mustImport');
-        if ( commit ) {
-            root.classList.remove('mustCommit');
-        }
-        //dropDownMenuHide();
-    };
-
-    const show = function(details) {
-        const root = document.querySelector('#dropDownMenuRecipes .dropdown-menu');
-        const ul = document.createElement('ul');
-        for ( const recipe of details.recipes ) {
-            let li = createEntry(
-                recipe.name,
-                recipe.ruleset.replace(reScopeAlias, '$1' + details.scope + '$2'),
-                ul
-            );
-            li.classList.toggle('mustImport', recipe.mustImport === true);
-            li.classList.toggle('mustCommit', recipe.mustCommit === true);
-            li.addEventListener('click', apply);
-        }
-        root.replaceChild(ul, root.querySelector('ul'));
-        dropDownMenuShow(uDom.nodeFromId('buttonRecipes'));
-    };
-
-    const beforeShow = async function() {
-        if ( recipes.length === 0 ) { return; }
-        const details = await vAPI.messaging.send('popup.js', {
-            what: 'fetchRecipeCommitStatuses',
-            scope: matrixSnapshot.scope,
-            recipes: recipes,
-        });
-        show(details);
-    };
-
-    const fetch = async function() {
-        const desHostnames = [];
-        for ( const hostname in matrixSnapshot.rows ) {
-            if ( matrixSnapshot.rows.hasOwnProperty(hostname) === false ) {
-                continue;
-            }
-            const row = matrixSnapshot.rows[hostname];
-            if ( row.domain === matrixSnapshot.domain ) { continue; }
-            if ( row.counts[0] !== 0 || row.domain === hostname ) {
-                desHostnames.push(hostname);
-            }
-        }
-        const response = await vAPI.messaging.send('popup.js', {
-            what: 'fetchRecipes',
-            srcHostname: matrixSnapshot.hostname,
-            desHostnames: desHostnames
-        });
-        recipes = Array.isArray(response) ? response : [];
-        const button = uDom.nodeFromId('buttonRecipes');
-        if ( recipes.length === 0 ) {
-            button.classList.add('disabled');
-            return;
-        }
-        button.classList.remove('disabled');
-        button.querySelector('.fa-icon-badge').textContent = recipes.length;
-    };
-
-    return { fetch, show: beforeShow, apply };
-})();
-
-/******************************************************************************/
-
 const revertAll = function() {
     vAPI.messaging.send('popup.js', {
         what: 'revertTemporaryMatrix'
@@ -1515,10 +1410,6 @@ uDom('#buttonMtxSwitches').on('click', function(ev) {
 uDom('[id^="mtxSwitch_"]').on('click', toggleMatrixSwitch);
 uDom('#buttonPersist').on('click', persistMatrix);
 uDom('#buttonRevertScope').on('click', revertMatrix);
-
-uDom('#buttonRecipes').on('click', function() {
-    recipeManager.show();
-});
 
 uDom('#buttonRevertAll').on('click', revertAll);
 uDom('[data-extension-url]').on('click', gotoExtensionURL);
